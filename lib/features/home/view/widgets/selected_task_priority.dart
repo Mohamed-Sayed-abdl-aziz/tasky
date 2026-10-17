@@ -3,9 +3,9 @@ import 'package:tasky/core/utils/assets_icons.dart';
 import 'package:tasky/core/utils/colors_app.dart';
 
 class SelectedTaskPriority extends StatefulWidget {
-  SelectedTaskPriority({super.key, required this.callBackPriority});
+  const SelectedTaskPriority({super.key, required this.callBackPriority});
 
-  void Function(int priority) callBackPriority;
+  final void Function(int priority) callBackPriority;
 
   @override
   State<SelectedTaskPriority> createState() => _SelectedTaskPriorityState();
@@ -56,7 +56,6 @@ class _SelectedTaskPriorityState extends State<SelectedTaskPriority> {
 
 class _ItemTaskPriority extends StatelessWidget {
   const _ItemTaskPriority({
-    super.key,
     required this.index,
     required this.isSelected,
     this.onTap,

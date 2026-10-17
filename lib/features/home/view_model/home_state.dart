@@ -12,6 +12,6 @@ class HomeSuccess extends HomeState {}
 class HomeEmpty extends HomeState {}
 
 class HomeError extends HomeState {
-  String error;
   HomeError(this.error);
+  final String error;
 }

@@ -142,9 +142,9 @@ class _BottomSheetAddTaskState extends State<BottomSheetAddTask> {
 }
 
 class _IconAddTask extends StatelessWidget {
-  _IconAddTask({super.key, required this.imagePath, this.onTap});
-  String imagePath;
-  void Function()? onTap;
+  const _IconAddTask({required this.imagePath, this.onTap});
+  final String imagePath;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {

@@ -3,8 +3,8 @@ import 'package:tasky/features/home/data/models/app_task_model.dart';
 import 'package:tasky/features/home/view/screens/task_screen.dart';
 
 class HomeSection extends StatelessWidget {
-  HomeSection({super.key, required this.tasks});
-  List<AppTaskModel> tasks;
+  const HomeSection({super.key, required this.tasks});
+  final List<AppTaskModel> tasks;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -18,8 +18,8 @@ class HomeSection extends StatelessWidget {
 }
 
 class ItemTaskWidget extends StatelessWidget {
-  ItemTaskWidget({super.key, required this.task});
-  AppTaskModel task;
+  const ItemTaskWidget({super.key, required this.task});
+  final AppTaskModel task;
 
   @override
   Widget build(BuildContext context) {

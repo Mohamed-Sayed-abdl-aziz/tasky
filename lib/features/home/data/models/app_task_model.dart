@@ -8,6 +8,13 @@ class AppTaskModel {
     this.isDone,
   });
 
+  String? title;
+  String? id;
+  String? description;
+  int? priority;
+  DateTime? date;
+  bool? isDone;
+
   AppTaskModel.fromJeson(Map<String, dynamic> json)
     : this(
         title: json['title'],
@@ -17,14 +24,6 @@ class AppTaskModel {
         date: DateTime.fromMillisecondsSinceEpoch(json['date']),
         isDone: json['isDone'],
       );
-
-  String? title;
-  String? id;
-  String? description;
-  int? priority;
-  DateTime? date;
-  bool? isDone;
-
   // to json
 
   Map<String, dynamic> toJson() {
